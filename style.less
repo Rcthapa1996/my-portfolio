@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand");
+
+html {
+    font-family: "Quicksand";
+    font-size: 12px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: 0px;
+    background-color: #ffffff;
+}
+
+.main-container {
+    display: flex;
+    // width: 80vw;
+    height: 100vh;
+    margin: 0px 15vw;
+
+    >.left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 45px 0px;
+        width: 300px;
+        height: 100%;
+        background-color: #f2f3f7;
+
+        .profile-img {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background-size: cover;
+            background-image: url("./img/Ramchandra\ Thapa.jpg");
+        }
+
+        .name {
+            margin-top: 30px;
+            font-family: "Playfair Display";
+            font-size: 2rem;
+        }
+
+        .designation {
+            font-size: 1.25rem;
+            margin-top: 11px;
+        }
+
+        .nav-container {
+            margin-top: 25px;
+
+            .nav-ul {
+                list-style: none;
+                text-align: center;
+                padding-inline-start: 0px;
+                margin: 10px;
+
+                .nav-li {
+                    font-size: 1rem;
+                    line-height: 1.8rem;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 1rem;
+        }
+    }
+
+    >.right {
+        height: auto;
+        overflow: scroll;
+        width: calc(100% - 300px);
+    }
+
+}
