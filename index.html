@@ -6,7 +6,10 @@
     <meta name="auther" content="Ramchanra Thapa">
     <link rel="stylesheet/less" type="text/css" href="./style.less">
     <script src="https://cdn.jsdelivr.net/npm/less"></script>
-    <!-- <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="./script.js"></script>
 </head>
 
 <body>
@@ -17,15 +20,15 @@
             <div class="designation">Frontend Engineer</div>
             <nav class="nav-container">
                 <ul class="nav-ul">
-                    <li class="nav-li">Home</li>
-                    <li class="nav-li">About</li>
-                    <li class="nav-li">Services</li>
-                    <li class="nav-li">Skills</li>
-                    <li class="nav-li">Education</li>
-                    <li class="nav-li">Experience</li>
-                    <li class="nav-li">Work</li>
-                    <li class="nav-li">Blog</li>
-                    <li class="nav-li">Contact</li>
+                    <li class="nav-li"><a href="#home">Home</a></li>
+                    <li class="nav-li"><a href="#about">About</a></li>
+                    <li class="nav-li"><a href="#services">Services</a></li>
+                    <li class="nav-li"><a href="#skills">Skills</a></li>
+                    <li class="nav-li"><a href="#education">Education</a></li>
+                    <li class="nav-li"><a href="#experience">Experience</a></li>
+                    <li class="nav-li"><a href="#work">Work</a></li>
+                    <li class="nav-li"><a href="#blog">Blog</a></li>
+                    <li class="nav-li"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <footer class="footer">
@@ -33,7 +36,173 @@
             </footer>
         </aside>
         <aside class="right">
+            <section id="home">
+                <div id="cv">
+                    <article>
+                        <div class="intro">
+                            Hi!<br>I'm Ramchandra
+                        </div>
+                        <button class="cta">Download CV<i class="fa-solid fa-download"></i></button>
+                    </article>
+                </div>
+                <div id="portfolio">
+                    <article>
+                        <div class="intro">
+                            I am an <br> Engineer
+                        </div>
+                        <button class="cta">View Portfolio<i class="fa-solid fa-suitcase"></i></button>
+                    </article>
+                </div>
+                <div id="controler">
+                    <div class="icon active"></div>
+                    <div class="icon"></div>
+                </div>
+            </section>
+            <section id="about">
+                <header class="header">
+                    <div class="title">
+                        <div class="main-heading">
+                            About us
+                        </div>
+                        <div class="sub-heading">
+                            Who am I?
+                        </div>
+                    </div>
+                    <main class="content">
+                        <p class="para">
+                            <b>Hi I'm Ramchandra Thapa</b> On her way she met a copy. The copy warned the Little
+                            Blind Text, that where
+                            it came from it would have been rewritten a thousand times and everything that was left from
+                            its
+                            origin would be the word "and" and the Little Blind Text should turn around and return to
+                            its
+                            own, safe country.
+                        </p>
+                        <p class="para">
+                            Even the all-powerful Pointing has no control about the blind texts it is an almost
+                            unorthographic life One day however a small line of blind text by the name of Lorem Ipsum
+                            decided to leave for the far World of Grammar.
+                        </p>
+                    </main>
+                </header>
+                <main class="box-container">
+                    <div class="box blue">
+                        <div class="icon"><i class="fa-solid fa-lightbulb"></i>
+                            <i class="fa-solid fa-lightbulb-on"></i>
+                        </div>
+                        <div class="content">Graphic Design
+                        </div>
+                    </div>
+                    <div class="box red">
+                        <div class="icon"><i class="fa-solid fa-globe"></i></div>
+                        <div class="content">Web Design
+                        </div>
+                    </div>
+                    <div class="box yellow">
+                        <div class="icon"><i class="fa-solid fa-database"></i></div>
+                        <div class="content">Software
+                        </div>
+                    </div>
+                    <div class="box brown">
 
+                        <div class="icon"><i class="fa-solid fa-mobile"></i></div>
+                        <div class="content">Application
+                        </div>
+                    </div>
+                </main>
+                <footer class="banner">
+                    <div>I am happy to know you<br>that 300+ projects done sucessfully!
+
+                    </div>
+                    <button class="btn">
+                        Hire me
+                    </button>
+                </footer>
+            </section>
+            <section id="services">
+                <header class="header">
+                    <div class="title">
+                        <div class="main-heading">
+                            What I do?
+                        </div>
+                        <div class="sub-heading">
+                            Here are some of my<br> expertise
+                        </div>
+                    </div>
+                </header>
+            </section>
+            <section id="skills">
+                <header class="header">
+                    <div class="title">
+                        <div class="main-heading">
+                            My Speciality
+                        </div>
+                        <div class="sub-heading">
+                            My Skills
+                        </div>
+                    </div>
+                </header>
+            </section>
+            <section id="education">
+                <header class="header">
+                    <div class="title">
+                        <div class="main-heading">
+                            Education
+                        </div>
+                        <div class="sub-heading">
+                            Education
+                        </div>
+                    </div>
+                </header>
+            </section>
+            <section id="experience">
+                <header class="header">
+                    <div class="title">
+                        <div class="main-heading">
+                            Experience
+                        </div>
+                        <div class="sub-heading">
+                            Experience
+                        </div>
+                    </div>
+                </header>
+            </section>
+            <section id="work">
+                <header class="header">
+                    <div class="title">
+                        <div class="main-heading">
+                            My Work
+                        </div>
+                        <div class="sub-heading">
+                            Recent Work
+                        </div>
+                    </div>
+                </header>
+            </section>
+            <section id="blog">
+                <header class="header">
+                    <div class="title">
+                        <div class="main-heading">
+                            Read
+                        </div>
+                        <div class="sub-heading">
+                            Recent Blog
+                        </div>
+                    </div>
+                </header>
+            </section>
+            <section id="contact">
+                <header class="header">
+                    <div class="title">
+                        <div class="main-heading">
+                            Get in Touch
+                        </div>
+                        <div class="sub-heading">
+                            Contact
+                        </div>
+                    </div>
+                </header>
+            </section>
         </aside>
     </main>
 </body>
