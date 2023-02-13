@@ -20,4 +20,4 @@ function toggelHome() {
   showCv = !showCv;
 }
 
-setInterval(toggelHome, 5000);
+// setInterval(toggelHome, 3000);

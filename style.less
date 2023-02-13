@@ -76,11 +76,6 @@ body {
 
                 .nav-li:hover {
                     border-bottom: 2px solid green;
-                    // cursor: pointer;
-                    // font-size: 1rem;
-                    // line-height: 1.8rem;
-                    // text-transform: uppercase;
-
                 }
             }
         }
@@ -149,13 +144,20 @@ body {
                 margin-bottom: 80px;
 
                 .box {
+                    position: relative;
                     border-width: 0px;
                     min-width: 150px;
-                    height: 150px;
+                    // height: 150px;
+                    height: auto;
                     margin: 0px 1.25rem;
                     box-shadow: 2px 2px 20px #ddd;
 
                     padding: 23px;
+
+                    .icon,
+                    .content {
+                        width: 130px;
+                    }
 
                     .icon {
                         font-size: 2.5rem;
@@ -166,15 +168,71 @@ body {
                         font-size: 1.25rem;
                         margin-top: 20px;
                     }
+
+                    .title,
+                    .body {
+                        padding: 23px;
+                        width: 200px;
+                        text-align: center;
+                        padding: 0px;
+                    }
+
+                    .title {
+                        font-weight: bold !important;
+                        text-transform: uppercase;
+                        margin-top: 60px;
+                        margin-bottom: 30px;
+                        font-family: "Quicksand";
+                        font-size: 1.3rem;
+                        line-height: 17.6px;
+                    }
+
+                    .body {
+                        margin-bottom: 2rem;
+                        font-size: 1.25rem;
+                        line-height: 27px;
+                    }
+
+                    .icon-box {
+                        width: 100px;
+                        height: 100px;
+                        position: absolute;
+                        top: -50px;
+                        left: calc(50% - 50px);
+                    }
+
+                    .icon-white {
+                        color: white !important;
+                        text-align: center;
+                        line-height: 100px;
+                    }
                 }
 
-                .blue {
+                .sky-blue {
                     border-bottom: #2c98f0;
                     border-style: solid;
                     border-bottom-width: 2px;
 
                     .icon {
                         color: #2c98f0;
+                    }
+
+                    .icon-box {
+                        background-color: #2c98f0;
+                    }
+                }
+
+                .blue {
+                    border-bottom: #4054b2;
+                    border-style: solid;
+                    border-bottom-width: 2px;
+
+                    .icon {
+                        color: #4054b2;
+                    }
+
+                    .icon-box {
+                        background-color: #4054b2;
                     }
                 }
 
@@ -186,6 +244,10 @@ body {
                     .icon {
                         color: #ec5453;
                     }
+
+                    .icon-box {
+                        background-color: #ec5453;
+                    }
                 }
 
                 .yellow {
@@ -195,6 +257,10 @@ body {
 
                     .icon {
                         color: #f9bf3f;
+                    }
+
+                    .icon-box {
+                        background-color: #f9bf3f;
                     }
                 }
 
@@ -206,7 +272,34 @@ body {
                     .icon {
                         color: #a84cb8;
                     }
+
+                    .icon-box {
+                        background-color: #a84cb8;
+                    }
                 }
+
+                .green {
+                    border-bottom: #2fa499;
+                    border-style: solid;
+                    border-bottom-width: 2px;
+
+                    .icon {
+                        color: #2fa499;
+                    }
+
+                    .icon-box {
+                        background-color: #2fa499;
+                    }
+                }
+            }
+
+            .services {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                margin: 80px 0px;
+                grid-row-gap: 80px;
+
+
             }
 
             .banner {
@@ -223,6 +316,91 @@ body {
                     border: 1px solid;
                     font-size: 1.25rem;
                     line-height: 2.3rem;
+
+                }
+            }
+
+            .skills-container {
+                display: flex;
+                flex-direction: column !important;
+                margin: 50px 15px 0px;
+
+                p {
+                    display: block;
+                }
+
+                .progress-container {
+
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .left,
+                    .right {
+                        width: 100%;
+                        padding: 10px;
+
+                        .progress-item {
+                            margin: 10px;
+                            height: 50px;
+                            // color: blue;
+                            // background-color: #2c98f0;
+
+                            .heading {
+                                font-family: "Quicksand";
+                                font-size: 1.3rem;
+                                line-height: 17.6px;
+                            }
+
+                            .progress-bar {
+                                position: relative;
+                                margin: 16px 0px;
+                                width: 100%;
+                                height: 6px;
+                                // border-radius: 3px;
+
+                                .full,
+                                .progress,
+                                .circle,
+                                .tooltip {
+                                    position: absolute;
+                                }
+
+                                .circle {
+                                    top: -2px;
+                                    left: calc(70% + 10px);
+                                }
+
+                                .full,
+                                .progress {
+                                    height: 6px;
+                                    border-radius: 3px;
+                                }
+
+                                .full {
+                                    background-color: black;
+                                    opacity: 0.5;
+                                    width: 100%;
+
+                                }
+
+                                .progress {
+                                    background-color: #2c98f0;
+                                    width: 75%;
+                                }
+
+                                .circle {
+                                    width: 10px;
+                                    height: 10px;
+                                    border-radius: 50%;
+                                    background-color: #2c98f0;
+                                }
+
+                                .tooltip {}
+                            }
+                        }
+                    }
+
                 }
             }
 
@@ -278,6 +456,7 @@ body {
                     padding: 10px;
                     text-transform: uppercase;
                     background-color: transparent;
+                    cursor: pointer;
 
                     i {
                         padding-left: 10px;
