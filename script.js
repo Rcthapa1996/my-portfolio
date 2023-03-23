@@ -1,6 +1,7 @@
 const cv = document.getElementById("cv");
 const portfolio = document.getElementById("portfolio");
 const homeControler = document.getElementById("controler");
+const downloadBtn = document.getElementById("download-cv");
 const homeSection = cv.parentElement;
 
 let showCv = false;
@@ -19,5 +20,12 @@ function toggelHome() {
   homeControler.children[1].classList.toggle("active");
   showCv = !showCv;
 }
+function downloadCv() {
+  let downloadUrl =
+    "https://ram-assets.s3.us-west-2.amazonaws.com/Ramchandra_Thapa_CV.pdf";
+  console.log("Hello Btn", downloadUrl);
+}
+
+downloadBtn.addEventListener("click", downloadCv);
 
 // setInterval(toggelHome, 3000);
