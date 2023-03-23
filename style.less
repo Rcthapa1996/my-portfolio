@@ -1,5 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand");
 
+:root {
+    --color-sky-blue: #2c98f0;
+    --color-red: #ec5453;
+    --color-yellow: #f9bf3f;
+    --color-brown: #a84cb8;
+    --color-green: #2fa499;
+    --color-blue: #4054b2;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-main-heading: #999999;
+    --color-box-shadow: #dddddd;
+    --color-nav-bg: #f2f3f7;
+
+}
+
 html {
     font-family: "Quicksand";
     font-size: 12px;
@@ -13,14 +28,14 @@ body {
     margin: 0px;
     padding: 0px;
     border: 0px;
-    background-color: #ffffff;
+    background-color: var(--color-white);
 }
 
 .main-container {
     display: flex;
     // width: 80vw;
     height: 100vh;
-    margin: 0px 5vw;
+    margin: 0px 15vw;
 
     >.left {
         display: flex;
@@ -29,7 +44,7 @@ body {
         padding: 45px 0px;
         width: 300px;
         height: 100%;
-        background-color: #f2f3f7;
+        background-color: var(--color-nav-bg);
 
         .profile-img {
             height: 150px;
@@ -70,12 +85,12 @@ body {
 
                     a {
                         text-decoration: none;
-                        color: #000;
+                        color: var(--color-black);
                     }
                 }
 
                 .nav-li:hover {
-                    border-bottom: 2px solid green;
+                    border-bottom: 2px solid var(--color-green);
                 }
             }
         }
@@ -91,12 +106,8 @@ body {
         overflow: scroll;
         width: calc(100% - 300px);
 
-
-        >section {
-            min-height: 100vh;
-        }
-
         >section:not([id='home']) {
+            // min-height: 100vh;
             margin-top: 210px;
             margin-left: 23px;
 
@@ -112,7 +123,7 @@ body {
                         font-family: "Quicksand";
                         font-size: 10px;
                         line-height: 1.5rem;
-                        color: #999999;
+                        color: var(--color-main-heading);
 
                     }
 
@@ -137,20 +148,20 @@ body {
                 }
             }
 
-            .box-container {
+            >.box-container {
                 display: flex;
                 justify-content: space-between;
                 margin-top: 15px;
                 margin-bottom: 80px;
 
-                .box {
+                >.box {
                     position: relative;
                     border-width: 0px;
                     min-width: 150px;
                     // height: 150px;
                     height: auto;
                     margin: 0px 1.25rem;
-                    box-shadow: 2px 2px 20px #ddd;
+                    box-shadow: 2px 2px 20px var(--color-box-shadow);
 
                     padding: 23px;
 
@@ -208,103 +219,113 @@ body {
                     }
                 }
 
-                .sky-blue {
-                    border-bottom: #2c98f0;
+                >.sky-blue {
+                    border-bottom: var(--color-sky-blue);
                     border-style: solid;
                     border-bottom-width: 2px;
 
                     .icon {
-                        color: #2c98f0;
+                        color: var(--color-sky-blue);
                     }
 
                     .icon-box {
-                        background-color: #2c98f0;
+                        background-color: var(--color-sky-blue);
                     }
                 }
 
-                .blue {
-                    border-bottom: #4054b2;
+                >.blue {
+                    border-bottom: var(--color-blue);
                     border-style: solid;
                     border-bottom-width: 2px;
 
                     .icon {
-                        color: #4054b2;
+                        color: var(--color-blue);
                     }
 
                     .icon-box {
-                        background-color: #4054b2;
+                        background-color: var(--color-blue);
                     }
                 }
 
-                .red {
-                    border-bottom: #ec5453;
+                >.red {
+                    border-bottom: var(--color-red);
                     border-style: solid;
                     border-bottom-width: 2px;
 
                     .icon {
-                        color: #ec5453;
+                        color: var(--color-red);
                     }
 
                     .icon-box {
-                        background-color: #ec5453;
+                        background-color: var(--color-red);
                     }
                 }
 
-                .yellow {
-                    border-bottom: #f9bf3f;
+                >.yellow {
+                    border-bottom: var(--color-yellow);
                     border-style: solid;
                     border-bottom-width: 2px;
 
                     .icon {
-                        color: #f9bf3f;
+                        color: var(--color-yellow);
                     }
 
                     .icon-box {
-                        background-color: #f9bf3f;
+                        background-color: var(--color-yellow);
                     }
                 }
 
-                .brown {
-                    border-bottom: #a84cb8;
+                >.brown {
+                    border-bottom: var(--color-brown);
                     border-style: solid;
                     border-bottom-width: 2px;
 
                     .icon {
-                        color: #a84cb8;
+                        color: var(--color-brown);
                     }
 
                     .icon-box {
-                        background-color: #a84cb8;
+                        background-color: var(--color-brown);
                     }
                 }
 
-                .green {
-                    border-bottom: #2fa499;
+                >.green {
+                    border-bottom: var(--color-green);
                     border-style: solid;
                     border-bottom-width: 2px;
 
                     .icon {
-                        color: #2fa499;
+                        color: var(--color-green);
                     }
 
                     .icon-box {
-                        background-color: #2fa499;
+                        background-color: var(--color-green);
                     }
                 }
             }
 
-            .services {
+            >.services {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 margin: 80px 0px;
                 grid-row-gap: 80px;
-
-
             }
 
-            .banner {
+            >.education-container {
+                >.education {
+                    >.header {
+                        background-color: #2fa499;
+                    }
+
+                    >.body {
+                        background-color: #999999;
+                    }
+                }
+            }
+
+            >.banner {
                 font-family: "Quicksand";
-                background-color: #f9bf3f;
+                background-color: var(--color-yellow);
                 padding: 30px;
                 font-size: 2.5rem;
                 line-height: 2.75rem;
@@ -316,16 +337,59 @@ body {
                     border: 1px solid;
                     font-size: 1.25rem;
                     line-height: 2.3rem;
-
                 }
             }
 
-            .skills-container {
+            >.transprant-footer {
+                width: calc(100% + 23px);
+                margin-left: -23px;
+                height: 250px;
+                background-image: url("https://raw.githubusercontent.com/technext/jackson/d1585ab1c2efb00a7f5d06cfede6a5ba033ac02c/images/cover_bg_1.jpg");
+
+                background-attachment: fixed;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center left;
+                padding: 45px 23px;
+
+                .service-count-container {
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .service-count-item {
+                        flex: 1;
+                        margin: 0px 15px;
+                        text-align: center;
+                        color: var(--color-white);
+
+                        .count {
+                            font-family: "Quicksand";
+                            font-size: 3.3rem;
+                            line-height: 6rem;
+                        }
+
+                        .detail {
+                            text-transform: uppercase;
+                            letter-spacing: 5px;
+
+                            font-size: 14px;
+                            line-height: 2.1rem;
+
+                            opacity: 0.7;
+                        }
+                    }
+                }
+            }
+
+            >.skills-container {
                 display: flex;
-                flex-direction: column !important;
+                flex-direction: column;
                 margin: 50px 15px 0px;
 
                 p {
+                    font-size: 1.25rem;
+                    line-height: 2.25rem;
                     display: block;
                 }
 
@@ -334,17 +398,17 @@ body {
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
+                    gap: 30px;
 
                     .left,
                     .right {
                         width: 100%;
-                        padding: 10px;
+                        // padding: 10px 0px;
+
 
                         .progress-item {
-                            margin: 10px;
+                            margin: 10px 0px;
                             height: 50px;
-                            // color: blue;
-                            // background-color: #2c98f0;
 
                             .heading {
                                 font-family: "Quicksand";
@@ -357,7 +421,6 @@ body {
                                 margin: 16px 0px;
                                 width: 100%;
                                 height: 6px;
-                                // border-radius: 3px;
 
                                 .full,
                                 .progress,
@@ -368,7 +431,15 @@ body {
 
                                 .circle {
                                     top: -2px;
-                                    left: calc(70% + 10px);
+                                    left: calc(100% - 5px);
+                                }
+
+                                .tooltip {
+                                    font-size: 1rem;
+                                    line-height: 1.2rem;
+                                    top: -20px;
+                                    left: calc(100% - 5px - 4px);
+                                    z-index: 4;
                                 }
 
                                 .full,
@@ -378,25 +449,181 @@ body {
                                 }
 
                                 .full {
-                                    background-color: black;
+                                    background-color: var(--color-black);
                                     opacity: 0.5;
                                     width: 100%;
+                                    z-index: 1;
 
                                 }
 
                                 .progress {
-                                    background-color: #2c98f0;
-                                    width: 75%;
+                                    width: 100%;
+                                    z-index: 2;
                                 }
 
                                 .circle {
                                     width: 10px;
                                     height: 10px;
                                     border-radius: 50%;
-                                    background-color: #2c98f0;
+                                    z-index: 3;
                                 }
 
-                                .tooltip {}
+                                &.percent-75 {
+                                    .progress {
+                                        width: 75%;
+                                    }
+
+                                    .tooltip {
+                                        left: calc(75% - 5px - 5px);
+                                    }
+
+                                    .circle {
+                                        left: calc(75% - 5px);
+                                    }
+                                }
+
+                                &.percent-85 {
+                                    .progress {
+                                        width: 85%;
+                                    }
+
+                                    .tooltip {
+                                        left: calc(85% - 5px - 5px);
+                                    }
+
+                                    .circle {
+                                        left: calc(85% - 5px);
+                                    }
+                                }
+
+                                &.percent-70 {
+                                    .progress {
+                                        width: 70%;
+                                    }
+
+                                    .tooltip {
+                                        left: calc(70% - 5px - 5px);
+                                    }
+
+                                    .circle {
+                                        left: calc(70% - 5px);
+                                    }
+                                }
+
+                                &.percent-60 {
+                                    .progress {
+                                        width: 60%;
+                                    }
+
+                                    .tooltip {
+                                        left: calc(60% - 5px - 5px);
+                                    }
+
+                                    .circle {
+                                        left: calc(60% - 5px);
+                                    }
+                                }
+
+                                &.percent-90 {
+                                    .progress {
+                                        width: 90%;
+                                    }
+
+                                    .tooltip {
+                                        left: calc(90% - 5px - 5px);
+                                    }
+
+                                    .circle {
+                                        left: calc(90% - 5px);
+                                    }
+                                }
+
+                                &.percent-80 {
+                                    .progress {
+                                        width: 80%;
+                                    }
+
+                                    .tooltip {
+                                        left: calc(80% - 5px - 5px);
+                                    }
+
+                                    .circle {
+                                        left: calc(80% - 5px);
+                                    }
+                                }
+
+                                &.sky-blue {
+
+                                    .progress,
+                                    .circle {
+                                        background-color: var(--color-sky-blue);
+                                    }
+
+                                    .tooltip {
+                                        color: var(--color-sky-blue);
+                                    }
+                                }
+
+                                &.red {
+
+                                    .progress,
+                                    .circle {
+                                        background-color: var(--color-red);
+                                    }
+
+                                    .tooltip {
+                                        color: var(--color-red);
+                                    }
+                                }
+
+                                &.yellow {
+
+                                    .progress,
+                                    .circle {
+                                        background-color: var(--color-yellow);
+                                    }
+
+                                    .tooltip {
+                                        color: var(--color-yellow);
+                                    }
+                                }
+
+                                &.brown {
+
+                                    .progress,
+                                    .circle {
+                                        background-color: var(--color-brown);
+                                    }
+
+                                    .tooltip {
+                                        color: var(--color-brown);
+                                    }
+                                }
+
+                                &.green {
+
+                                    .progress,
+                                    .circle {
+                                        background-color: var(--color-green);
+                                    }
+
+                                    .tooltip {
+                                        color: var(--color-green);
+                                    }
+                                }
+
+                                &.blue {
+
+                                    .progress,
+                                    .circle {
+                                        background-color: var(--color-blue);
+                                    }
+
+                                    .tooltip {
+                                        color: var(--color-blue);
+                                    }
+                                }
+
                             }
                         }
                     }
@@ -407,6 +634,8 @@ body {
         }
 
         #home {
+
+            min-height: 100vh;
             padding: 15px;
             background-position: center;
             background-size: cover;
@@ -430,12 +659,12 @@ body {
                     width: 10px;
                     margin: 10px;
                     border-radius: 50%;
-                    border: 2px solid #2c98f0;
+                    border: 2px solid var(--color-sky-blue);
                 }
 
                 .active {
                     border: none;
-                    background-color: black;
+                    background-color: var(--color-black);
                     opacity: 0.7;
                 }
             }
